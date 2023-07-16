@@ -1,0 +1,259 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+a {
+    color: #AD3B23;
+    text-decoration: none;
+}
+
+body {
+    min-width: 768px;
+    font-family: "Microsoft YaHei", "SimHei", "Apple LiGothic Medium";
+}
+ul {
+    list-style: none;
+    
+}
+
+
+input[type=submit], button {
+    text-indent: -999em;
+    overflow: hidden;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+}
+
+#popup {
+    min-width: 640px;
+    min-height: 480px;
+    background: #E6E6E6 url(../image/wireless/popup_bg.png) no-repeat top right;
+}
+
+#popup #center {
+    display: block;
+	margin: 0 auto;
+    position: relative;
+    width: 640px;
+    height: 480px;
+    background: url(../image/popup_shadow.png) no-repeat 48px 344px;
+}
+
+#popup .greet {
+    top: 64px;
+    left: 48px;
+    width: 512px;
+    height: 224px;
+    position: absolute;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    text-indent: -999em;
+    overflow: hidden;
+    background: #E64E2E url(../image/wireless/popup_greeting.png) no-repeat 30px 46px;
+}
+
+#popup .triangle {
+    position: absolute;
+    border-color: #E64E2E transparent;
+    left: 80px; top: 288px;
+    border-width: 48px 48px 0 0;
+    border-style: solid;
+}
+
+#popup .corner {
+    position: absolute;
+    top: 288px;
+    left: 592px;
+    border-color: transparent #CCCCCC;
+    border-width: 16px 0 0 16px;
+    
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+#popup #info {
+    top: 96px;
+    left: 176px;
+    padding: 32px;
+    width: 352px;
+    height: 208px;
+    position: absolute;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    background: #F2F2F2;
+}
+
+#popup .bar {
+    position: absolute;
+    top: 304px;
+    right: 32px;
+    width: 208px;
+    height: 80px;
+    background: #FFFFFF;
+    -webkit-box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0 0 4px rgba(0,0,0,0.1);
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+
+#popup #links {
+    position: absolute;
+    bottom: 32px;
+    right: 32px;
+    width: 260px;
+}
+
+#links li {
+    float: left;
+    margin-right: 12px;
+    font-size: 11px;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+#info .user_name {
+    float: left;
+    color: #E64E2E;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 34px;
+    font-weight: lighter;
+}
+
+#info #info_content {
+    clear: left;
+    float: left;
+    margin-top: -8px;
+}
+#info .label_text {
+    clear: left;
+    float: left;
+    width: 56px;
+    height: 32px;
+    margin-top: 22px;
+    text-align: right;
+    font-size: 13px;
+    color: #303030;
+}
+
+#info .label_text .English {
+    font-size: 13px;
+    color: #303030;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+
+
+#info .content_text {
+    float: left;
+    margin: 24px 0 0 20px;
+    padding-top: 4px;
+    height: 28px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 28px;
+    font-weight: lighter;
+}
+
+#info .content_text .unit {
+    margin-left: 8px;
+    color: #5C5C5C;
+}
+
+#info .usage_line {
+    position: relative;
+    float: left;
+    margin: 24px 0 0 16px;
+    padding: 0;
+    width: 280px;
+    height: 32px;
+    background: url(../image/wired/usage_bg.gif) repeat-y;
+}
+
+.usage_line .usage_text {
+    position: absolute;
+    top: -16px;
+    right: 14px;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 13px;
+    color: #969696;
+}
+
+.usage_text li {
+    float: right;
+    width: 53px;
+    text-align: right;
+}
+
+.usage_line #usage_value {
+    float: left;
+    height: 32px;
+    max-width: 280px;
+    background: #FBB03B;
+}
+
+.usage_line .stripe {
+    position: absolute;
+    top: 0;
+    right: 4px;
+    width: 4px;
+    height: 100%;
+    background: #F2F2F2;
+}
+
+.usage_line .second_stripe {
+    right: 12px;
+}
+
+#info .usage_line .content_text {
+    position: absolute;
+    top: 2px;
+    left: 4px;
+    float: none;
+    margin: 0;
+    padding: 0;
+}
+
+.usage_line .content_text .unit {
+    font-size: 24px;
+}
+
+.disconnect {
+    margin: 16px;
+    width: 174px;
+    height: 46px;
+    border: #B2AABE solid 1px;
+    background: #C0BDCC url(../image/disconnect.png) no-repeat center 0;
+    overflow: hidden;
+}
+
+#links #link_info {
+    background: url(../image/wireless/popup_info.gif) no-repeat ;
+}
+
+#links #link_lib {
+    background: url(../image/wireless/popup_lib.gif) no-repeat ;
+}
+
+#links #link_learn {
+    background: url(../image/wireless/popup_learn.gif) no-repeat ;
+}
+
+#links #link_mail {
+    background: url(../image/wireless/popup_mail.gif) no-repeat ;
+}
+
+#links li a {
+    display: block;
+    padding: 16px 0 0 26px;
+    height: 16px;
+}
+
+#links li:last-child
+{
+    display: block;
+	margin:0;
+}
